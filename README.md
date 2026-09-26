@@ -20,6 +20,8 @@ The R36H can be inconvenient to administer without a network. This utility gives
 
 **Status:** the underlying connection worked on a physical R36H with ArkOS, kernel `4.4.189`, and macOS. This standalone installer has local automated validation; a fresh install/reboot/uninstall cycle on another card is recommended. See [validation and compatibility](docs/validation.md).
 
+Please note - the modified USB port loses its normal host-accessory function until restored. Users should note this before installing.
+
 ## What you need
 
 - An R36H that already boots correctly. The tested installation was **ArkOS R35S–R36S v2.0_11072025 MultiPanel**, aarch64, kernel **4.4.189**, using Panel 4. Finish first-boot setup before preparing the card.
