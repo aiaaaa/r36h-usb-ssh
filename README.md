@@ -5,9 +5,9 @@ rev0.01
 
 # Purpose
 
-The stock r36h device is only provided with inbound usb likages (host)... to connect a game controller or wifi dongle
+The stock r36h is a USB Host, and cannot operate as a USB Device (Plugging the r36h into a computer provided no connection path between the two hosts)
 
-I did not have a wifi dongle, and simply wanted to plug the r636h into a computer as a client and control the device via SSH
+The goal was, without a Wifi dongle, to be able to simply plug the r636h into a computer as a USB device and control the device via SSH
 
 This repo will set up the r36h to establish a wired ssh connection just with a few modifications to a r36h SD card. (currently mac only but the process here could be easily adapted)
 
