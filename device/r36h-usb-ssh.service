@@ -1,0 +1,14 @@
+[Unit]
+Description=R36H USB SSH connection
+After=local-fs.target systemd-modules-load.service
+Wants=ssh.service
+Before=ssh.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/r36h-usb-ssh-start.sh
+RemainAfterExit=yes
+TimeoutStartSec=30
+
+[Install]
+WantedBy=multi-user.target
