@@ -143,6 +143,9 @@ for script in "Prepare SD Card.command" device/start.sh "device/R36H USB SSH.sh"
   bash -n "$script" || break
 done
 ```
+
+The tests use temporary files and mocked system services. They do not touch a connected SD card, load a USB driver, or change the host network.
+
 ## License
 
-The tests use temporary files and mocked system services. They do not touch a connected SD card, load a USB driver, or change the host network. Software is MIT licensed; the OS's existing kernel modules retain their own licenses and are not included.
+Software is MIT licensed; the OS's existing kernel modules retain their own licenses and are not included.
